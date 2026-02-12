@@ -7,6 +7,11 @@ let mage: Personagem = new Mage("Angelo mage");
 let warrior: Personagem = new Warrior("Angelo warrior");
 let priest: Personagem = new Priest("Angelo priest");
 
-console.log("mage :>> ", mage);
-console.log("warrior :>> ", warrior);
-console.log("priest :>> ", priest);
+
+const personagens: Personagem[] = []
+personagens.push(mage)
+personagens.push(priest)
+
+
+personagens.forEach((p) => console.log(p.atacar()))
+
